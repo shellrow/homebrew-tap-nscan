@@ -1,21 +1,21 @@
 class Nscan < Formula
   desc "Cross-platform network scan tool for host and service discovery"
   homepage "https://github.com/shellrow/nscan"
-  version "1.1.0"
+  version "1.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/shellrow/nscan/releases/download/v1.1.0/nscan-aarch64-apple-darwin.tar.xz"
-      sha256 "7ba700b240164a8c2850b1bcc512b491f0c3cc8fc614d1dae6830595487b6f90"
+      url "https://github.com/shellrow/nscan/releases/download/v1.2.0/nscan-aarch64-apple-darwin.tar.xz"
+      sha256 "7f356291b823b05389a7fb11595cef40057ac9017a33cbf757b026d9deef4446"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shellrow/nscan/releases/download/v1.1.0/nscan-x86_64-apple-darwin.tar.xz"
-      sha256 "043f45de1b6ace4fa7836b1476fd4fece43f0df62f0a4dd21b266f22e9f526fb"
+      url "https://github.com/shellrow/nscan/releases/download/v1.2.0/nscan-x86_64-apple-darwin.tar.xz"
+      sha256 "59b9db473f3787f42270e6d5486f9f033a78e9da448f15464eb663d832f8acbf"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/shellrow/nscan/releases/download/v1.1.0/nscan-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "25961713121bb9e2229b360c4cac7c1f2faa8d07fc6743f17e96064654312380"
+      url "https://github.com/shellrow/nscan/releases/download/v1.2.0/nscan-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a5137e39722b9d4a37d6b4257bfde3d648433cbe2d1303f83fcfbfe3d89314b0"
     end
   end
   license "MIT"
